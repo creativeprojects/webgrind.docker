@@ -1,7 +1,7 @@
 #!/bin/sh
 
 image_name=creativeprojects/webgrind
-version=1.4.0
+version=1.5.0
 
 docker pull debian:jessie
 docker rmi ${image_name}:latest
