@@ -5,6 +5,7 @@ version=1.7.0
 
 cd $(dirname "${0}")
 
+git pull --all
 docker pull debian:buster
 docker pull ${image_name}:${version}
 docker pull ${image_name}:latest
