@@ -1,7 +1,7 @@
 #!/bin/sh
 
 image_name=creativeprojects/webgrind
-version=1.7.0
+version=1.8.0
 
 cd $(dirname "${0}")
 

@@ -1,7 +1,7 @@
 FROM debian:buster
 
 LABEL maintainer="Fred <Fred@CreativeProjects.Tech>" \
-      version="webgrind-1.7.0"
+      version="webgrind-1.8.0"
 
 # expose default directory where we look for cachegrind files
 VOLUME /tmp/xdebug
@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y \
     nginx supervisor php-fpm php-cli \
     graphviz python git build-essential \
     # install webgrind from git and configure the default folder to be /tmp/xdebug
-    && git clone --branch v1.7.0 --depth 1 https://github.com/jokkedk/webgrind /var/www/webgrind \
+    && git clone --branch v1.8.0 --depth 1 https://github.com/jokkedk/webgrind.git /var/www/webgrind \
     && cd /var/www/webgrind && make && chown -R www-data.www-data /var/www/webgrind \
     && sed -ie "s|'/tmp'|'/tmp/xdebug'|g" config.php \
     && chown -R www-data.www-data /tmp/xdebug \
