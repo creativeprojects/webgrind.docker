@@ -7,4 +7,4 @@ Webgrind is a Xdebug profiling web fronted written in PHP. It implements a subse
 
 See the [Docker file](https://github.com/creativeprojects/webgrind.docker/blob/master/Dockerfile)
 
-Image based on Debian 10 (buster), PHP-FPM 7.3 and webgrind 1.8.0
+Image based on Debian 11 (bullseye), PHP-FPM 7.4 and webgrind 1.9.2

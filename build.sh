@@ -1,12 +1,12 @@
 #!/bin/sh
 
 image_name=creativeprojects/webgrind
-version=1.8.0
+version=1.9.2
 
 cd $(dirname "${0}")
 
 git pull --all
-docker pull debian:buster
+docker pull debian:bullseye
 docker pull ${image_name}:${version}
 docker pull ${image_name}:latest
 docker rmi ${image_name}:latest
